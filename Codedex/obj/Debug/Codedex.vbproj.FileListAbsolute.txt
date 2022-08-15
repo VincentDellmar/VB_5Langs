@@ -1,0 +1,13 @@
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\bin\Debug\Codedex.exe.config
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\bin\Debug\Codedex.exe
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\bin\Debug\Codedex.pdb
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\bin\Debug\Codedex.xml
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.vbproj.AssemblyReference.cache
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.vbproj.SuggestedBindingRedirects.cache
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.Form1.resources
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.Resources.resources
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.vbproj.GenerateResource.cache
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.vbproj.CoreCompileInputs.cache
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.exe
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.xml
+C:\Users\vwdel826\Documents\CODE\repo\SY22-23\VB\Codedex\Codedex\obj\Debug\Codedex.pdb
