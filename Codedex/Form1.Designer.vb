@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.ProgramIcon = New System.Windows.Forms.PictureBox()
+        Me.LangIcon = New System.Windows.Forms.PictureBox()
         Me.LangName = New System.Windows.Forms.Label()
         Me.LangYear = New System.Windows.Forms.Label()
         Me.RustB = New System.Windows.Forms.Button()
@@ -31,18 +31,20 @@ Partial Class Form1
         Me.FortranB = New System.Windows.Forms.Button()
         Me.LuaB = New System.Windows.Forms.Button()
         Me.JavaScriptB = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.ProgramIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LangDesc = New System.Windows.Forms.Label()
+        Me.LangCreator = New System.Windows.Forms.Label()
+        CType(Me.LangIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ProgramIcon
+        'LangIcon
         '
-        Me.ProgramIcon.Image = CType(resources.GetObject("ProgramIcon.Image"), System.Drawing.Image)
-        Me.ProgramIcon.Location = New System.Drawing.Point(0, 0)
-        Me.ProgramIcon.Name = "ProgramIcon"
-        Me.ProgramIcon.Size = New System.Drawing.Size(256, 256)
-        Me.ProgramIcon.TabIndex = 0
-        Me.ProgramIcon.TabStop = False
+        Me.LangIcon.Image = CType(resources.GetObject("LangIcon.Image"), System.Drawing.Image)
+        Me.LangIcon.Location = New System.Drawing.Point(0, 0)
+        Me.LangIcon.Name = "LangIcon"
+        Me.LangIcon.Size = New System.Drawing.Size(256, 256)
+        Me.LangIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.LangIcon.TabIndex = 0
+        Me.LangIcon.TabStop = False
         '
         'LangName
         '
@@ -58,7 +60,7 @@ Partial Class Form1
         '
         Me.LangYear.AutoSize = True
         Me.LangYear.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LangYear.Location = New System.Drawing.Point(262, 52)
+        Me.LangYear.Location = New System.Drawing.Point(262, 73)
         Me.LangYear.Name = "LangYear"
         Me.LangYear.Size = New System.Drawing.Size(153, 32)
         Me.LangYear.TabIndex = 2
@@ -114,24 +116,35 @@ Partial Class Form1
         Me.JavaScriptB.Text = "JavaScript"
         Me.JavaScriptB.UseVisualStyleBackColor = True
         '
-        'Label1
+        'LangDesc
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(262, 93)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(484, 100)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Description: Rust is a modern systems programming " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "language focusing on safety, " &
+        Me.LangDesc.AutoSize = True
+        Me.LangDesc.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LangDesc.Location = New System.Drawing.Point(262, 114)
+        Me.LangDesc.Name = "LangDesc"
+        Me.LangDesc.Size = New System.Drawing.Size(484, 100)
+        Me.LangDesc.TabIndex = 8
+        Me.LangDesc.Text = "Description: Rust is a modern systems programming " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "language focusing on safety, " &
     "speed, and concurrency. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "It accomplishes these goals by being memory safe " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "wit" &
     "hout using garbage collection."
+        '
+        'LangCreator
+        '
+        Me.LangCreator.AutoSize = True
+        Me.LangCreator.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LangCreator.Location = New System.Drawing.Point(262, 41)
+        Me.LangCreator.Name = "LangCreator"
+        Me.LangCreator.Size = New System.Drawing.Size(162, 32)
+        Me.LangCreator.TabIndex = 9
+        Me.LangCreator.Text = "Creator: Lol"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.LangCreator)
+        Me.Controls.Add(Me.LangDesc)
         Me.Controls.Add(Me.JavaScriptB)
         Me.Controls.Add(Me.FortranB)
         Me.Controls.Add(Me.LuaB)
@@ -139,16 +152,16 @@ Partial Class Form1
         Me.Controls.Add(Me.RustB)
         Me.Controls.Add(Me.LangYear)
         Me.Controls.Add(Me.LangName)
-        Me.Controls.Add(Me.ProgramIcon)
+        Me.Controls.Add(Me.LangIcon)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.ProgramIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.LangIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Public WithEvents ProgramIcon As PictureBox
+    Public WithEvents LangIcon As PictureBox
     Public WithEvents LangName As Label
     Public WithEvents LangYear As Label
     Public WithEvents RustB As Button
@@ -156,5 +169,6 @@ Partial Class Form1
     Public WithEvents FortranB As Button
     Public WithEvents LuaB As Button
     Public WithEvents JavaScriptB As Button
-    Public WithEvents Label1 As Label
+    Public WithEvents LangDesc As Label
+    Public WithEvents LangCreator As Label
 End Class
